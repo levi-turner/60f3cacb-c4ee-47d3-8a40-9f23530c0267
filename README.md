@@ -59,3 +59,6 @@ Script=..\NotificationAdderListener\server.js
 notificationTime,hostname,serviceStatusTimestamp,serviceState
 2019-05-29T17:46:49.685Z,qliksenserim02,2019-05-29T17:48:11.368Z,NoCommunication
 ```
+
+# Credits
+[Jesse Paris](https://github.com/jparis)
