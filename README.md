@@ -14,6 +14,10 @@ This NodeJS script does the following:
 3. When it receives a notification, it does a `GET` operation on the specific `ServiceStatus` entity which belongs to an Engine Service who's `timestamp` value has changed. This can be due to the service restarting or due to the Qlik Sense Repository Service being unable to communicate with the Node's Engine Service.
 4. Write the time at which the Engine went offline to `C:\Temp\serviceStatus.csv`
 
+# Notes:
+
+* This configuration will *not* persist after upgrading Qlik Sense either by a full upgrade or patch. The `services.conf` file is expected to be reverted on any upgrade or patch operation.
+
 # Config steps for Script:
 
 * Unzip the directory into the install path for Qlik Sense (by default `C:\Program Files\Qlik\Sense`) such that there is a directory named `NotificationAdderListener` with a file inside called `server.js` 
